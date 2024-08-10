@@ -8,6 +8,7 @@
 ```xml
 <ItemGroup>
     <Protobuf Include="Protos\greet.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\message.proto" GrpcServices="Client" />
   </ItemGroup>
 
 <ItemGroup>

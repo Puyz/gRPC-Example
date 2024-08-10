@@ -8,6 +8,7 @@ dotnet new grpc --name project_name
 ```xml
 <ItemGroup>
     <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\message.proto" GrpcServices="Server" />
 </ItemGroup>
 
 <ItemGroup>
