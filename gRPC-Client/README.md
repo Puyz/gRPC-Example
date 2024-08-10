@@ -7,6 +7,10 @@
 ## .csproj
 ```xml
 <ItemGroup>
+    <Protobuf Include="Protos\greet.proto" GrpcServices="Client" />
+  </ItemGroup>
+
+<ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.28.0-rc2" />
     <PackageReference Include="Grpc.Net.Client" Version="2.65.0" />
     <PackageReference Include="Grpc.Tools" Version="2.66.0-pre3">
