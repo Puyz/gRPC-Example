@@ -4,8 +4,13 @@ option csharp_namespace = "gRPC_Message_Server";
 
 package message;
 
+/*	
+	Unary: rpc SendMessage (MessageRequest) returns (MessageResponse);
+	Server Streaming: rpc SendMessage (MessageRequest) returns (stream MessageResponse);
+*/ 
 service Message {
-  rpc SendMessage (MessageRequest) returns (MessageResponse);
+
+  rpc SendMessage (MessageRequest) returns (stream MessageResponse);
 }
 
 message MessageRequest {
