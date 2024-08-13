@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -7,11 +7,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Protobuf Include="Protos\greet.proto" GrpcServices="Client" />
-    <Protobuf Include="Protos\message.proto" GrpcServices="Client" />
-  </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.28.0-rc2" />
@@ -20,5 +15,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Protobuf Include="Protos\fileTransport.proto" GrpcServices="Client" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="DownloadedFiles\" />
   </ItemGroup>
 </Project>
